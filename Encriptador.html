@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="Encriptador-java.js"></script>
+        <title>Encriptador - Challenge Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <h1><img id="logo" src="Imagenes/Logo_Alura.png" alt="Logo Alura"></h1>
+                <h2>Encriptador</h2>
+            </div>
+        </header>
+        <main>
+            <section class="caja-texto">
+                    <textarea name="textarea" id="frase" rows="15" cols="40" placeholder="Escriba aquí el texto que desea encriptar" class="texto"></textarea>
+                    <p class="recomendacion">Por favor solo ingresar letras minúsculas y sin acento.</p>
+                    <div class="botones">
+                        <button id="boton-encriptar">Encriptar</button>
+                        <button id="boton-desencriptar">Desencriptar</button>
+                    </div>
+                </section>
+            <section class="visor-encriptado">
+                    <div id="visor-desencriptado" >
+                        <img src="Imagenes/no_encontrado.jpg" alt="Buscar con lupa">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingrese el texto que desea encriptar</p>
+                    </div>
+                    <button id="boton-copiar" hidden>Copiar</button>
+                
+            </section>
+            
+        </main>
+
+        <script>
+
+            var buttonEncriptar = document.querySelector("#boton-encriptar");
+            buttonEncriptar.onclick = mayusculas;
+
+            var buttonDesencriptar = document.querySelector("#boton-desencriptar");
+            buttonDesencriptar.onclick = desencriptar;
+
+            var buttonCopiar = document.querySelector("#boton-copiar");
+            buttonCopiar.onclick = copiar;
+
+        </script>
+        <footer>
+            <p>Nombre: Danny Zamir Contreras Acevedo</p>
+            <p>Correo: dazacon13@gmail.com</p>
+            <p>Redes: @Darkant13</p>
+        </footer>
+       
+
+    </body>
+
+
+</html>
